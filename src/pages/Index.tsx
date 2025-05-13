@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import AwardsSection from '@/components/AwardsSection';
 import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import ContactSection from '@/components/ContactSection';
+import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,12 +27,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-lovable-black text-lovable-text">
+    <div className="min-h-screen bg-blackvector-black text-blackvector-text">
       <Navbar />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
       <PortfolioSection />
+      <PricingSection />
       <TeamSection />
       <TestimonialsSection />
       <AwardsSection />

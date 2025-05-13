@@ -16,7 +16,7 @@
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 94%;
 
-    --primary: 180 100% 50%;
+    --primary: 352 80% 57%;
     --primary-foreground: 0 0% 6%;
 
     --secondary: 0 0% 10%;
@@ -25,7 +25,7 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 180 100% 50%;
+    --accent: 352 80% 57%;
     --accent-foreground: 0 0% 6%;
 
     --destructive: 0 84% 60%;
@@ -33,7 +33,7 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 180 100% 50%;
+    --ring: 352 80% 57%;
 
     --radius: 0.5rem;
   }
@@ -44,7 +44,7 @@
   }
 
   html, body {
-    @apply bg-lovable-black text-lovable-text font-montserrat overflow-x-hidden;
+    @apply bg-blackvector-black text-blackvector-text font-montserrat overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -62,24 +62,24 @@
   }
   
   .neon-border {
-    @apply border border-lovable-neon shadow-[0_0_15px_rgba(0,255,247,0.3)];
+    @apply border border-blackvector-red shadow-[0_0_15px_rgba(234,56,76,0.3)];
   }
   
   .section-title {
-    @apply text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-lovable-text relative inline-block;
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-blackvector-text relative inline-block;
   }
   
   .section-title::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-1/2 h-1 bg-lovable-neon rounded-full;
+    @apply absolute bottom-0 left-0 w-1/2 h-1 bg-blackvector-red rounded-full;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-white to-lovable-neon bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white to-blackvector-red bg-clip-text text-transparent;
   }
   
   .hover-glow {
-    @apply transition-all duration-300 hover:text-lovable-neon hover:shadow-[0_0_10px_rgba(0,255,247,0.5)];
+    @apply transition-all duration-300 hover:text-blackvector-red hover:shadow-[0_0_10px_rgba(234,56,76,0.5)];
   }
 }
 

@@ -35,13 +35,14 @@ const Navbar = () => {
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
     { name: 'Portfolio', id: 'portfolio' },
+    { name: 'Pricing', id: 'pricing' },
     { name: 'Team', id: 'team' },
     { name: 'Contact', id: 'contact' },
   ];
 
   const navbarClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
     isScrolled
-      ? 'py-3 bg-lovable-black/80 backdrop-blur-lg shadow-lg'
+      ? 'py-3 bg-blackvector-black/80 backdrop-blur-lg shadow-lg'
       : 'py-6 bg-transparent'
   }`;
 
@@ -50,8 +51,8 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <span className="text-lovable-neon font-bold text-2xl mr-1">LOVABLE</span>
-            <span className="text-lovable-text font-bold text-2xl">AI</span>
+            <span className="text-blackvector-red font-bold text-2xl mr-1">BLACK</span>
+            <span className="text-blackvector-text font-bold text-2xl">VECTOR</span>
           </a>
         </div>
 
@@ -63,10 +64,10 @@ const Navbar = () => {
               onClick={() => scrollToSection(link.id)}
               className="hover-glow relative overflow-hidden group"
             >
-              <span className="text-lovable-text group-hover:text-lovable-neon transition-all duration-300">
+              <span className="text-blackvector-text group-hover:text-blackvector-red transition-all duration-300">
                 {link.name}
               </span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-lovable-neon group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blackvector-red group-hover:w-full transition-all duration-300"></span>
             </button>
           ))}
         </div>
@@ -75,14 +76,14 @@ const Navbar = () => {
         <Button
           onClick={() => setIsOpen(!isOpen)}
           variant="ghost"
-          className="md:hidden p-1 text-lovable-neon"
+          className="md:hidden p-1 text-blackvector-red"
         >
           <Menu size={24} />
         </Button>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-lovable-black/95 backdrop-blur-lg p-4 flex flex-col space-y-3 animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-blackvector-black/95 backdrop-blur-lg p-4 flex flex-col space-y-3 animate-fade-in">
             {navLinks.map((link) => (
               <button
                 key={link.id}

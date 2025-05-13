@@ -63,12 +63,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        lovable: {
+        blackvector: {
           black: "#0f0f0f", 
           grey: "#1a1a1a",
-          neon: "#00fff7",
+          red: "#ea384c",
           text: "#f0f0f0",
-          "neon-glow": "0 0 5px #00fff7, 0 0 20px rgba(0, 255, 247, 0.3)",
+          "red-glow": "0 0 5px #ea384c, 0 0 20px rgba(234, 56, 76, 0.3)",
         },
       },
       borderRadius: {
