@@ -26,6 +26,30 @@ const testimonials = [
   },
 ];
 
+// Company logos data
+const companyLogos = [
+  {
+    name: "Microsoft",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+  },
+  {
+    name: "Google",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+  },
+  {
+    name: "Amazon",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+  },
+  {
+    name: "Apple",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+  },
+  {
+    name: "Tesla",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
+  },
+];
+
 const TestimonialsSection = () => {
   return (
     <section className="section-padding bg-lovable-black">
@@ -84,12 +108,19 @@ const TestimonialsSection = () => {
         {/* Client logos */}
         <div className="mt-16">
           <p className="text-center text-sm text-lovable-text/60 mb-8">TRUSTED BY INNOVATIVE COMPANIES</p>
-          <div className="flex flex-wrap justify-center gap-12 opacity-40 grayscale">
-            {[1, 2, 3, 4, 5].map((_, index) => (
-              <div key={index} className="h-12">
-                <div className="w-24 h-full bg-lovable-grey/30 rounded flex items-center justify-center">
-                  <span className="text-xs">LOGO {index + 1}</span>
-                </div>
+          <div className="flex flex-wrap justify-center gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+            {companyLogos.map((company, index) => (
+              <div 
+                key={index} 
+                className="h-12 transition-transform duration-300 hover:scale-110"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <img 
+                  src={company.logo} 
+                  alt={company.name} 
+                  className="h-full w-auto object-contain" 
+                />
               </div>
             ))}
           </div>
